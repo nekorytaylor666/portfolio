@@ -9,6 +9,9 @@ document.addEventListener(
 			smooth: true,
 			smoothMobile: true,
 		});
+		setTimeout(() => {
+			scroll.update();
+		}, 10);
 	},
 	false
 );
