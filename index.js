@@ -11,7 +11,7 @@ document.addEventListener(
 		});
 		setInterval(() => {
 			scroll.update();
-		}, 100);
+		}, 1000);
 	},
 	false
 );
