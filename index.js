@@ -1,17 +1,12 @@
 import LocomotiveScroll from 'locomotive-scroll';
+0;
 
-document.addEventListener(
-	'DOMContentLoaded',
-	function () {
-		// your code goes here
-		const scroll = new LocomotiveScroll({
-			el: document.querySelector('[data-scroll-container]'),
-			smooth: true,
-			smoothMobile: true,
-		});
-		setTimeout(() => {
-			scroll.update();
-		}, 300);
-	},
-	false
-);
+const scroll = new LocomotiveScroll({
+	el: document.querySelector('[data-scroll-container]'),
+	smooth: true,
+	smoothMobile: false,
+});
+scroll.destroy();
+document.addEventListener('DOMContentLoaded', function (event) {
+	scroll.init();
+});
